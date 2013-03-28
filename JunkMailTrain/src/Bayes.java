@@ -1,4 +1,4 @@
-import org.apache.lucene.analysis.Token;   
+﻿import org.apache.lucene.analysis.Token;   
 import org.apache.lucene.analysis.cn.*;   
    
 import java.util.*;   
@@ -108,7 +108,7 @@ public class Bayes
              String key = token.termText();   
              if(!probabilityHash.containsKey(key))   
              {   
-                 break;   
+                 continue;   
              }   
              else   
              {   
